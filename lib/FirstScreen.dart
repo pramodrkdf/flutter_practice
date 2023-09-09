@@ -11,8 +11,31 @@ class FirstScreen extends StatelessWidget{
       body: Material(
         color: Colors.lightGreenAccent,
         child: Center(
-          child: Text('random value is ...${myMathFun()}',
-            style: TextStyle(fontSize: 20, color: Colors.redAccent),),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Container(
+                margin: EdgeInsets.all(10),
+                color: Colors.lightGreen,
+                height: 100,
+                width: 50,
+              ),
+              Container(
+                margin: EdgeInsets.all(20),
+                color: Colors.cyan,
+                height: 200,
+                width: 50,
+              ),
+              Container(
+                margin: EdgeInsets.all(10),
+                color: Colors.greenAccent,
+                height: 300,
+                width: 50,
+              ),
+
+            ],
+          ),
         ),
       ),
     );
