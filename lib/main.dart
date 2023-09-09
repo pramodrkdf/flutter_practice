@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'FirstScreen.dart';
+import 'SecondScreen.dart';
 
 void main() {
   runApp(
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
         title: "material app",
-        home: FirstScreen()
+        home: SecondScreen()
     );
   }
 
