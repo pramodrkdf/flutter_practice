@@ -26,7 +26,8 @@ class SecondScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 20,),
-                Row(children: [
+                Row(
+                  children: [
                   Expanded(child:
                   Text("welcome to new technology ",
                     style: TextStyle(fontSize: 20, color: Colors.black),))
@@ -34,7 +35,18 @@ class SecondScreen extends StatelessWidget {
                 SizedBox(height: 40,),
                 Row(
                   children: [
-                    ElevatedButton(onPressed: (){},
+                    ElevatedButton(onPressed: (){
+                      showDialog(context: context,
+                          builder: (ctx) =>
+                            AlertDialog(title: Text('MyAlert Dialog'),
+                              content: (Text('Do you want to continue ?')),
+                              actions: [
+                                TextButton(onPressed: (){
+                                  Navigator.of(ctx).pop();
+                                }, child: Text('OK'))
+                              ],
+                            ));
+                    },
                         child: Text('CLICK hERE') ),
                   ],
                 ),

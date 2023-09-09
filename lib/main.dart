@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'FirstScreen.dart';
+import 'ListScreen.dart';
 import 'SecondScreen.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
         title: "material app",
-        home: SecondScreen()
+        home: ListScreen()
     );
   }
 
