@@ -11,7 +11,7 @@ class ListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ListView'),),
+      appBar: AppBar(title: const Text('ListView'),),
   //    body: getListView(),
       body: getLongListView(),
     );
@@ -90,7 +90,7 @@ class ListScreen extends StatelessWidget {
    var listview = ListView.builder(
        itemBuilder: (context, index){
          return ListTile(
-           title: Text(listItems[index], style: TextStyle(fontSize: 25, color: Colors.cyan),),
+           title: Text(listItems[index], style: const TextStyle(fontSize: 25, color: Colors.cyan),),
            onTap: (){
              print(' you have clicked on ${listItems[index]} ');
            },
